@@ -1,0 +1,62 @@
+<html>
+<header>
+    <title>Registration</title>
+</header>
+
+<body>
+    <form method="post" action="Reg.php">
+        <fieldset>
+            <legend>
+                REGISTRATION
+            </legend>
+            Name
+            <input type="text" name="name"><br>
+
+
+            Email
+            <input type="email" name="email"><br>
+
+
+            User Name
+            <input type="text" name="UserName"><br>
+
+
+            Password
+            <input type="password" name="pass"><br>
+
+
+            Confirm Password
+            <input type="password" name="ConfirmPass"><br>
+
+
+
+            <fieldset>
+                <legend>
+                    Gender
+                </legend>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="others">Others
+            </fieldset>
+
+
+
+            <fieldset>
+                <legend>
+                    Date of Birth
+                </legend>
+                <input type="text" name="dd">
+                <input type="text" name="mm">
+                <input type="text" name="yyyy">(dd/mm/yyyy)
+            </fieldset>
+
+
+
+            <input type="submit" name="submit" value="Submit">
+            <input type="button" name="reset" value="Reset">
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
