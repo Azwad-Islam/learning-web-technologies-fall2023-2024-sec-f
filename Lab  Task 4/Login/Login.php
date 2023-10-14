@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Lab 4</title>
+    <title>Lab 4 task1</title>
 </head>
 
 <body>
