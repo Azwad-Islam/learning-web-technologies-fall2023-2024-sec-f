@@ -25,7 +25,7 @@ function register($id, $name, $type, $password)
 
 
     $con = getConnection();
-    $sql = "select * from users where id='{$id}'";
+    $sql = "select * from users where ID='{$id}'";
     $result = mysqli_query($con, $sql);
     $count = mysqli_num_rows($result);
     if ($count == 1) {
@@ -68,6 +68,7 @@ function UpdatePass($id,$password)
 {
     $con = getConnection();
     $sql = " UPDATE `users` SET `Password`= '{$password}' WHERE ID = '{$id}'";
+    //UPDATE `users` SET `Password`='[1234]' WHERE ID='15-10101-1'
     $result = mysqli_query($con, $sql);
     $count = mysqli_num_rows($result);
     $row = mysqli_fetch_assoc($result);
