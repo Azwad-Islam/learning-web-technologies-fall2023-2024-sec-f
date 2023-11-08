@@ -11,7 +11,7 @@
 
         function CheckString(n1) {
             for (let i = 0; i < n1.length; i++) {
-                if (!((n1.charCodeAt(i) >= 65 && n1.charCodeAt(i) <= 90) || (n1.charCodeAt(i) >= 97 && n1.charCodeAt(i) <= 122) || n1[i] === '.' || n1[i] === '-' || n1[i] === ' ')) {
+                if (!((n1.charCodeAt(i) >= 65 && n1.charCodeAt(i) <= 90) || (n1.charCodeAt(i) >= 97 && n1.charCodeAt(i) <= 122) || n1[i] == '.' || n1[i] == '-' || n1[i] == ' ')) {
                     return false;
                 }
             }
@@ -28,7 +28,7 @@
         function NameValidation() {
             let name = document.getElementById("name").value.trim();
 
-            if (name === "") {
+            if (name == "") {
                 alert("Name field cannot be empty");
                 return;
             } else if (name.split(' ').length < 2) {
