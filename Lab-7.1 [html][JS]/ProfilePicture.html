@@ -6,10 +6,13 @@
         <fieldset>
             <legend>Profile Picture</legend>
             User Id: <input type="text" id="UserId" /> <br>
+            <br>
             Picture <input type="file" id="ProPic" /> <br>
-        </fieldset>
-        <button onclick="ProPicValidation()">Submit</button>
+            <br>
+            <button onclick="ProPicValidation()">Submit</button>
 
+        </fieldset>
+        
         <script>
             function ProPicValidation() {
                 let UserID = document.getElementById("UserId").value.trim();
