@@ -1,7 +1,7 @@
 <?php
 
     $dbhost = "localhost";
-    $dbname = "webtech";
+    $dbname = "projectdb";
     $dbuser = "root";
     $dbpass = "";
 
