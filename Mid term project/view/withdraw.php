@@ -33,7 +33,10 @@ echo "Hello, ".$username;
     
     </fieldset>
 </form>
+<h1><a href=UserHome.php>Home </a></h1>
+<br><br>
 <h1><a href="../controller/logout.php">logout </a></h1>
+
 </body>
 
 </html>
