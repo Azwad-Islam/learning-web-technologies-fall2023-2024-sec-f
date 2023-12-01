@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Profile Picture</title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Profile Picture</legend>
+            User Id: <input type="text" id="UserId" /> <br>
+            <br>
+            Picture <input type="file" id="ProPic" /> <br>
+            <br>
+            <button onclick="ProPicValidation()">Submit</button>
+
+        </fieldset>
+        
+        <script>
+            function ProPicValidation() {
+                let UserID = document.getElementById("UserId").value.trim();
+                let ProPic = document.getElementById("ProPic").value;
+
+                if (UserID === "" || parseInt(UserID) <= 0 || isNaN(UserID) ) {
+                    alert("UserId cannot be empty and has to be a positive number");
+                    return;
+                }else if (ProPic === "") {
+                    alert("Picture cannot be empty");
+                    return;
+                }else{
+                    alert("successful");
+            }
+        }
+        </script>
+    </body>
+</html>

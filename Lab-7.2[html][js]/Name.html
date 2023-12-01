@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Name</title>
+</head>
+<body>
+    Name <br>
+    <input type="text" id="name" value=""> <br>
+    <button onclick="NameValidation()">Submit</button>
+
+    <script>
+
+        function CheckString(n1) {
+            for (let i = 0; i < n1.length; i++) {
+                if (!((n1.charCodeAt(i) >= 65 && n1.charCodeAt(i) <= 90) || (n1.charCodeAt(i) >= 97 && n1.charCodeAt(i) <= 122) || n1[i] == '.' || n1[i] == '-' || n1[i] == ' ')) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        function CheckFirstChar(n1) {
+            if(!(n1.charCodeAt(0) >= 65 && n1.charCodeAt(0) <= 90) && !(n1.charCodeAt(0) >= 97 && n1.charCodeAt(0) <= 122)){
+                return false;
+            }
+        
+            return true;
+        }
+
+        function NameValidation() {
+            let name = document.getElementById("name").value.trim();
+
+            if (name == "") {
+                alert("Name field cannot be empty");
+                return;
+            } else if (name.split(' ').length < 2) {
+                alert("Name must contain at least two words");
+                return;
+            } else if (!CheckString(name)) {
+                alert("Name can only contain a-z, A-Z, dot(.), dash(-), or space");
+                return;
+            } else if(!CheckFirstChar(name)){
+                alert("Must start with a letter");
+
+            } else {
+                alert("Name submission was successful");
+            }
+            
+        }
+    </script>
+</body>
+</html>
