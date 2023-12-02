@@ -41,7 +41,7 @@ function register(name, ContactNum , username, password) {
             if (response.success) {
             }
             if (response.error) {
-                document.getElementById("error").innerHTML = response.error;
+            alert("error");
             }
         }
     };
