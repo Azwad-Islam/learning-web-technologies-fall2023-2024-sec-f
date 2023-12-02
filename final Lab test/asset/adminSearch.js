@@ -3,7 +3,7 @@ function ajax() {
     if (username) {
         let xhttp = new XMLHttpRequest();
 
-        xhttp.open('GET', '../controller/adminCheck.php?uname=' + username, true);
+       // xhttp.open('GET', '../controller/adminCheck.php?uname=' + username, true);
         xhttp.onreadystatechange = function () {
 
             if (this.readyState == 4 && this.status == 200) {
@@ -13,7 +13,7 @@ function ajax() {
                 let staffNumber = responseArray[1];
                 let userName = responseArray[2];
 
-                document.getElementById('info').innerHTML = 'Name: ' + name + ',  username: ' + userName ', ;
+                document.getElementById('search').innerHTML = 'Name: ' + name + ',  username: ' + userName ;
             }
         }
         xhttp.send();
