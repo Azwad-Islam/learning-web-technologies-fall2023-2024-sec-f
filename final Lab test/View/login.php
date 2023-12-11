@@ -5,7 +5,7 @@ include_once("../controller/loginCheck.php")
 
 
 <center>
-	<form action="../controller/loginCheck.php" method="POST" enctype="">
+	
 		<table border=" 0" cellspacing="0" cellpadding="0">
 			<tr>
 				<td>
