@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Title</title>
+        <script src="../assets/JS/search.js"></script>
+        <link rel="stylesheet" href="../assets/styles/rafid.css"/>
+    </head>
+    <body>
+        <div id='topbarleft'>
+            <a href=homepage.html><img src="../assets/home.png"></a>
+            </div>
+
+            <div id='topbarright'>
+            <a href="user.php" >
+                        User
+                    </a><br>
+                    <div onclick='menuFunc()'>
+                        <p id='menu'>Menu</p></div>
+                    </div>
+        <center>
+        <table>
+            Search by User Name:
+            <form method="post">
+                <input type="text" id='term' name="userName" value="">
+                <input type="button" id="button" name = "button" value = "Search" onclick="searchfunc()">
+            </form>
+            <table id='result'></table>
+        </center>
+    </body>
+</html>
